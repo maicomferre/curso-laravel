@@ -1,10 +1,14 @@
 <?php
 
-namespace Tests;
+namespace Tests\Feature;
 
-use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+use Tests\TestCase;
 
-abstract class TestCase extends BaseTestCase
+class HomeController extends TestCase
 {
-    //
+    public function test_home_returns_ok()
+    {
+        $response = $this->get('/home');
+        $response->assertStatus(200);
+    }
 }
