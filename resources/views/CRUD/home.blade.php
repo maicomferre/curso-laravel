@@ -24,10 +24,36 @@
                 <td>{{  $user->birthdate }}</td>
                 <td>{{ $user->city }}</td>
                 <td><a href="{{  route('users.edit', ['user' => $user->id]) }}">Edit User</a></td>
-                <td><a href="{{ route('users.destroy',['user' => $user->id]) }}">Delete User</a></td>
+                <td><a href="javascript:_delete('{{ $user->id }}','{{ $user->firstname }}')">Delete User</a></td>
             </tr>
         @endforeach
     </tbody>
 </table>
+<hr>
+    <a href="{{ route('users.create') }}">
+    <button class="btn btn-info">Create An User</button>
+    </a>
 
+    <script>
+        function _delete(id,name){
+            Swal.fire({
+                title: "Do you want delete the user "+name,
+                showDenyButton: true,
+                confirmButtonText: "Delete",
+                denyButtonText: `Cancel`,
+                icon: 'info',
+            }).then((x) =>{
+                if(x.isConfirmed){
+                    $('#destroy_users').val(id);
+                    $('#form_destroy')[0].submit();
+                }
+            });
+        }
+    </script>
+
+    <form style="display:none;" action="{{ route('users.destroy') }}" id="form_destroy" method="post">
+        @method('delete')
+        @csrf
+        <input type="hidden" name="user_id" id="destroy_users" />
+    </form>
 @endsection
