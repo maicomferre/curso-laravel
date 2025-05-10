@@ -10,8 +10,7 @@ class HomeApi extends Controller
 
     public function index()
     {
-        dd(app(ApiExample::class));
-        //dd($this->api);
+
     }
 
 
