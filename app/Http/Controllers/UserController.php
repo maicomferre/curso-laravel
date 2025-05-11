@@ -34,7 +34,6 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $requests = $request->except(['_token', '_method']);
 
         $creaed = $this->user->create([
             "name" => $request->input("firstname").' '.$request->input("lastname"),
