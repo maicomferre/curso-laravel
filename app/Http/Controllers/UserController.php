@@ -94,8 +94,8 @@ class UserController extends Controller
         $destroyed =  $this->user->where('id',$request->input('user_id'))->delete();
 
         if($destroyed){
-            return redirect('/crud')->with('success','User detroyed with successfully');
+            return redirect('/crud')->with('success','User destroyed with successfully');
         }
-        return redirect('/crud/')->with('faill', 'Something went wrong on detroy user');
+        return redirect('/crud/')->with('faill', 'Something went wrong on destroy user');
     }
 }
