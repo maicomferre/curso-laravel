@@ -14,7 +14,7 @@
     <body>
         <h3>Areas de estudo</h3>
         <ul>
-            <li><a href="{{ route('crud-home') }}"></a></li>
+            <li><a href="{{ route('crud-home') }}">CRUD</a></li>
         </ul>
     </body>
 </html>
