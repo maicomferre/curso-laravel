@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -64,3 +65,95 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+=======
+## ROADMAP Laravel 2025
+
+
+🧱 Nível 1 — Estruturação sólida
+
+    Service Container e Service Providers
+    📚 Documentação
+
+    Facades e Helpers
+    📚 Documentação
+
+    Validation (validações de dados)
+    📚 Documentação
+
+🔐 Nível 2 — Autenticação e Autorização
+
+    Laravel Breeze ou Fortify (sistemas de login prontos)
+    📚 Breeze
+    📚 Fortify
+
+    Policies e Gates (controle de permissões)
+    📚 Documentação
+
+    Middlewares (controle de acesso entre requisições)
+    📚 Documentação
+
+🧠 Nível 3 — Organização e Arquitetura
+
+    Repository Pattern
+    📝 Artigo explicativo
+
+    Service Layer (camada de serviços para lógica de negócio)
+    📝 Exemplo aplicado
+
+    DTOs (Data Transfer Objects)
+    📝 Com Spatie Data
+
+⚙️ Nível 4 — Processamento Assíncrono
+
+    Queues e Jobs (filas de execução assíncrona)
+    📚 Documentação
+
+    Events e Listeners (eventos do sistema)
+    📚 Documentação
+
+🌐 Nível 5 — APIs RESTful
+
+    API Resources (transformar modelos em JSON customizado)
+    📚 Documentação
+
+    Autenticação de API com Sanctum
+    📚 Documentação
+
+    Versionamento de API (boas práticas)
+    Exemplo: usar rotas como /api/v1/...
+
+✅ Nível 6 — Testes
+
+    Testes com PHPUnit (testes automatizados)
+    📚 Documentação
+
+    Mockery (mock de objetos e dependências)
+    📚 Documentação oficial
+
+🚀 Extras
+
+    Laravel Telescope (debug de requisições e queries)
+    📚 Documentação
+
+    Laravel Horizon (monitoramento de filas)
+    📚 Documentação
+
+    Multi-tenancy (multi clientes/bancos)
+    📦 Pacote Tenancy for Laravel
+
+    Controle de permissões com Spatie
+    📦 Spatie Permission
+
+💼 Projeto Final — Sistema de Pedidos (API-first)
+
+    Autenticação via Sanctum
+
+    CRUD com políticas e validações robustas
+
+    Envio de notificações por email em fila
+
+    Organização com camada de serviços e DTOs
+
+    Testes automatizados cobrindo o fluxo principal
+
+>>>>>>> origin/main
