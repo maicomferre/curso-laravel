@@ -1,0 +1,90 @@
+# =========================================
+# Laravel + Node.js + Composer .gitignore
+# =========================================
+
+# Dependências do Composer
+/vendor/
+composer.lock
+
+# Dependências do Node.js
+/node_modules/
+/public/hot
+/public/build
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+
+# Cache e builds
+/.phpunit.cache/
+/bootstrap/cache/
+/storage/*.key
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+/public/storage
+
+# Arquivos de ambiente
+.env
+.env.*
+!.env.example
+
+# Arquivos de IDEs e ferramentas
+/.idea/
+/.vscode/
+/.fleet/
+/.zed/
+/nbproject/
+/*.iml
+/.project
+/.classpath
+/.settings/
+
+# Ferramentas de desenvolvimento Laravel
+Homestead.yaml
+Homestead.json
+auth.json
+/.phpactor.json
+/.phpunit.result.cache
+
+# Outras ferramentas comuns
+/.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Arquivos temporários e de sistema
+*.bak
+*.tmp
+*.log
+*.cache
+*.orig
+
+# Testes e relatórios
+coverage/
+.phpunit.result.cache
+/.phpunit.cache/
+
+# Docker e containers (se usados)
+docker-compose.override.yml
+/.docker/
+/.dockerignore
+
+# Outras pastas temporárias
+/.sass-cache
+/.next
+/.nuxt
+/.vercel
+/.cache
+
+# Arquivos de build frontend (caso use Vite, Mix ou outros)
+public/mix-manifest.json
+public/js/
+public/css/
+
+# =========================================
+# Fim do .gitignore
+# =========================================
+
