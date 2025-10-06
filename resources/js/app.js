@@ -1,5 +1,9 @@
 import 'admin-lte';
 import { OverlayScrollbars } from 'overlayscrollbars';
+import.meta.glob([
+   "../images/**",
+    "../fonts/**",
+]);
 
 const SELECTOR_SIDEBAR_WRAPPER = '.sidebar-wrapper';
 const Default = {
