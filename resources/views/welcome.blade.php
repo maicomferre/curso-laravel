@@ -186,7 +186,7 @@
                                 <!-- Message. Default to the start -->
                                 <div class="direct-chat-msg">
                                     <div class="direct-chat-infos clearfix">
-                                        <span class="direct-chat-name float-start"> Alexander Pierce </span>
+                                        <span class="direct-chat-name float-start"> {{ auth()->user()->name }} </span>
                                         <span class="direct-chat-timestamp float-end"> 23 Jan 2:00 pm </span>
                                     </div>
                                     <!-- /.direct-chat-infos -->
@@ -222,7 +222,7 @@
                                 <!-- Message. Default to the start -->
                                 <div class="direct-chat-msg">
                                     <div class="direct-chat-infos clearfix">
-                                        <span class="direct-chat-name float-start"> Alexander Pierce </span>
+                                        <span class="direct-chat-name float-start"> {{ auth()->user()->name }} </span>
                                         <span class="direct-chat-timestamp float-end"> 23 Jan 5:37 pm </span>
                                     </div>
                                     <!-- /.direct-chat-infos -->
